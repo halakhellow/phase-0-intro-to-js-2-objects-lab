@@ -21,3 +21,7 @@ let deleteFromEmployeeByKey = (employee, key) => {
     return employeeCopy
 }
 
+let destructivelyDeleteFromEmployeeByKey = (employee, key) => {
+    delete employee[key];
+    return employee
+}
