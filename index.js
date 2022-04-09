@@ -9,3 +9,8 @@ let updateEmployeeWithKeyAndValue = (employee, key, value) => {
         [key]: value
     }
 }
+
+let destructivelyUpdateEmployeeWithKeyAndValue = (employee, key, value) => {
+    employee[key] = value;
+    return employee;
+}
